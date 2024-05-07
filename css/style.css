@@ -1,0 +1,270 @@
+
+/* colors: */
+body{
+    margin: 0;
+    background-color: white;
+}
+html{
+  font-size: 80%;
+}
+
+/* Heading */
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    background-color: rgba(75, 72, 72, 40%);
+    backdrop-filter: blur(5px);
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.nav-item{
+    font-size: 1rem;
+    
+}
+a{
+  text-decoration: none;
+  color: #ddd;
+}
+a:hover{
+  text-decoration: none;
+  color: #ddd;
+}
+a:focus{
+  text-decoration: none;
+  color: #ddd;
+}
+.header-logo{
+    height: 70px;
+    margin-left: 20px;
+}
+.spacer{
+  width: 50%;
+}
+.donateButton{
+  background-color: #AFC900;
+  color: #3D214F !important;
+  padding: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 20px;
+}
+
+/*Title card*/
+.title-card{
+    width: 100%;
+    height: 570px;
+    background-color: #3D214F;
+    text-align: center;
+    padding-top: 70px;
+}
+h1{
+    margin: 0px;
+    padding-top: 200px;
+    font-size: 3rem;
+    color: silver;
+    z-index: 3;
+    position: relative;
+}
+h4{
+  margin: 0px;
+    font-size: 2em;
+    color: silver;
+    position: relative;
+    z-index: 3;
+    margin-top: 10px;
+}
+.bride{
+  opacity: 0.3;
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  left: 0;
+}
+@media (max-width: 600px) {
+  .title-card{
+    height: 370px;
+  }
+  .bride{
+    height: 300px;
+  }
+  h1{
+    padding-top: 50px;
+  }
+}
+
+
+/* Body */
+.introduction p{
+  font-size: 1.5rem;
+  font-family: "Manrope", sans-serif;
+  margin: 40px;
+  color: #3D214F;
+  text-align: center;
+}
+h2{
+  font-family: "Manrope", sans-serif;
+  
+  margin-bottom: 40px;
+  color: #3D214F;
+}
+#carousel-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  width: 70%;
+  background-color: #AFC900;
+  margin: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+#myCarousel{
+  width: 90%;
+  aspect-ratio: 3/2;
+  overflow: hidden;
+}
+.cimg{
+  width: 100%;
+  object-fit: fill;
+  overflow: hidden;
+}
+h3{
+  background-color: rgba(61, 33, 79, 0.8);
+  color: #AFC900;
+  border-radius: 10px;
+  width: fit-content;
+  text-decoration: underline;
+  font-family: "Manrope", sans-serif;
+  font-size: 2vw;
+}
+.carousel-caption p{
+  background-color: rgba(61, 33, 79, 0.8);
+  border-radius: 10px;
+  text-align: left;
+  font-family: "Manrope", sans-serif;
+  font-weight: 200;
+  font-size: 2vw;
+}
+footer{
+  height: 80px;
+  background-color: #4B4848;
+}
+@media (max-width: 600px) {
+   #myCarousel{
+    min-width: 100%;
+   } 
+   #carousel-container{
+    width: 100%;
+    background-color: #ddd;
+    margin: 0;
+   }
+  }
+/* Charity pages */
+
+.intro-block{
+  width: 100%;
+  height: 300px;
+  padding-top: 70px;
+  background-color: #3D214F;
+  display: flex;
+  justify-content: center;
+}
+.intro-block-logo{
+  height: 200px;
+  margin-top: 50px;
+}
+.card-container{
+  background-color: #AFC900;
+  width: 70%;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.charity-page-text{
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  margin: 10%;
+}
+.charity-page-p{
+  font-size: 1.2rem;
+}
+.left{
+  text-align: right;
+}
+.charity-page-img{
+  width: 90%;
+  margin: 5%;
+  border-radius: 10px;
+}
+.button{
+  background-color: #3D214F;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 10px;  
+}
+.button-text{
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Charity Dropdown */
+.dropbtn {
+    background-color: inherit;
+    color: #ddd;
+    
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #AFC900;
+    min-width: fit-content;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  .show {display: block;}
+  .charlogos{
+    width: 100px;
+  }
